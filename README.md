@@ -1,5 +1,5 @@
 # Setup
-Modify `updates.json` with the information from your credentials file
+Modify `config.json` with the information from your credentials file
 ```json
 {
     "username": "admin",
