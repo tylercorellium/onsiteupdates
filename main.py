@@ -69,13 +69,12 @@ def main():
         
         if hostname not in [appliance["id"] for appliance in deployments]:
             print("[!] Could not find this unit's hostname in the files portal, are you running this directly on the appliance?")
-            
-        for appliance in deployments:
-            if appliance["id"] == hostname:
+            for appliance in deployments:
                 retrieve_info(appliance, config)
-
-            else:
-                retrieve_info(appliance, config)
+        else: 
+            for appliance in deployments:
+                if appliance["id"] == hostname:
+                    retrieve_info(appliance, config)
         
     except Exception as e:
         print(f"Error: {e}")
