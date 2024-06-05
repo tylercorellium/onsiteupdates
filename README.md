@@ -2,7 +2,7 @@
 Modify `config.json` with the information from your credentials file
 ```json
 {
-    "username": "admin",
+    "username": "CHANGEME",
     "password": "CHANGEME",
     "domain": "https://CHANGEME.enterprise.corellium.com"
   }
